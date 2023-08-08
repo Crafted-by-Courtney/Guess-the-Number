@@ -10,6 +10,14 @@ function guessTheNumberGame() {
   const targetNumber = generateRandomNumber(minNumber, maxNumber);
   let attempts = 0;
 
+  const guessButton = document.getElementById('guessButton');
+      const guessInput = document.getElementById('guessInput');
+      const message = document.getElementById('message');
+
+      guessButton.addEventListener('click', function () {
+        const playerGuess = parseInt(guessInput.value, 10);
+      }
+
   while (true) {
     const playerGuess = parseInt(prompt(`Guess the number between ${minNumber} and ${maxNumber}:`), 10);
 
@@ -29,8 +37,8 @@ function guessTheNumberGame() {
       guessButton.disabled = true;
       guessInput.disabled = true;
       break;
-    }
-  }
+      }
+  });
 }
 
 // Start the game
