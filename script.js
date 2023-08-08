@@ -26,6 +26,8 @@ function guessTheNumberGame() {
       console.log("Too high! Try again.");
     } else {
       console.log(`Congratulations! You guessed the number ${targetNumber} in ${attempts} attempts.`);
+      guessButton.disabled = true;
+      guessInput.disabled = true;
       break;
     }
   }
