@@ -7,6 +7,7 @@ function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
 // Main game function
 function guessTheNumberGame() {
   const minNumber = 1;
