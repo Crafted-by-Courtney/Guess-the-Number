@@ -1,8 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     background-color: #f0f0f0;
+    overflow: hidden;
   }
 
   header {
@@ -10,10 +16,9 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px;
-    border-style: solid;
-    border-bottom: #ff5722;
-    justify-content: center;
+    border-bottom: 2px solid #ff5722;
     width: 100%;
+    margin-top: -2px;
     
   }
 
@@ -36,7 +41,7 @@ body {
     bottom: 0;
     width: 100%;
     border-style: solid;
-    border-top: #ff5722;
+    border-top: 2px solid #ff5722;
   }
 
   h1 {
