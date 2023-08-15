@@ -17,7 +17,7 @@ The game also features a separate scoring system for the player and the computer
 
 ## Live Site
 
-You can play the Guess the Number Game live at [https://github.com/Crafted-by-Courtney/Guess-the-Number.git]
+You can play the Guess the Number Game live at [https://crafted-by-courtney.github.io/Guess-the-Number/]
 
 ## Installation Instructions
 
