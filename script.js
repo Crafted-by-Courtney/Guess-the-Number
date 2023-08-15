@@ -32,6 +32,13 @@ function updateScoreDisplay() {
   document.getElementById('score').textContent = `Score: ${score}`;
 }
 
+const computerScoreElement = document.getElementById('computerScore'); // Get the element for computer's score
+let computerScore = 0; // Initialize the computer's score
+
+function updateComputerScoreDisplay() {
+  computerScoreElement.textContent = `Computer Score: ${computerScore}`;
+}
+
 // Main game function
 function guessTheNumberGame() {
   resetGame(); // Initialize the game when the page loads
@@ -39,6 +46,7 @@ function guessTheNumberGame() {
   guessButton.addEventListener('click', function () {
     // The parseInt() converts the numeric string value to an integer value
     const playerGuess = parseInt(guessInput.value, 10);
+    const computerGuess = generateRandomNumber(minNumber, maxNumber); // Computer's guess
 
     // while (attempts <= maxAttempts) {
       // message.textContent = "Enter your guess:";
@@ -69,6 +77,8 @@ function guessTheNumberGame() {
       guessInput.disabled = true;
       score -= 5; // Subtract 5 from the score when the player loses
       updateScoreDisplay();
+      computerScore += 5; // Increase computer's score when the player loses
+      updateComputerScoreDisplay(); // Update computer's score display
     }
   });
   }
